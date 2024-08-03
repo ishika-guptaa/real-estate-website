@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import { toast } from "react-toastify";
 
 export const api = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: "https://real-estate-bd.vercel.app/api",
 });
 
 export const getAllProperties = async () => {
@@ -104,9 +104,8 @@ export const toFav = async (id, email, token) => {
   }
 };
 
-
 export const getAllFav = async (email, token) => {
-  if(!token) return
+  if (!token) return;
   try {
     const res = await api.post(
       `/user/allFav`,
@@ -118,8 +117,8 @@ export const getAllFav = async (email, token) => {
       }
     );
     // console.log(res);
-    
-    return res.data["favResidenciesID"]
+
+    return res.data["favResidenciesID"];
   } catch (error) {
     toast.error("Something went wrong while fetching favs");
     throw error;
@@ -127,7 +126,7 @@ export const getAllFav = async (email, token) => {
 };
 
 export const getAllBookings = async (email, token) => {
-  if(!token) return
+  if (!token) return;
   try {
     const res = await api.post(
       `/user/allBookings`,
@@ -138,8 +137,8 @@ export const getAllBookings = async (email, token) => {
         },
       }
     );
-    // console.log("res",res);    
-    return res.data["bookedVisits"]
+    // console.log("res",res);
+    return res.data["bookedVisits"];
   } catch (error) {
     toast.error("Something went wrong while fetching bookings");
     throw error;
@@ -148,8 +147,8 @@ export const getAllBookings = async (email, token) => {
 
 export const createResidency = async (data, token, userEmail) => {
   //ensure userEmail is included in data object
-  const requestData={...data, userEmail}
-  console.log(requestData);  
+  const requestData = { ...data, userEmail };
+  console.log(requestData);
   try {
     const res = await api.post(
       `/residency/create`,
