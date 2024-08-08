@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="max-w-sm">
             <Link to={"/"} className="flex items-center gap-x-2">
               <span className="font-[900] text-[24px]">
-                Casa<span className="font-[600] medium-20">Central</span>
+                Dream<span className="font-[600] medium-20">Center</span>
               </span>
             </Link>
             <p className="py-4  ">
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
       {/* copyright */}
       <p className="text-white bg-tertiary medium-14 py-2 px-8 rounded-b-3xl flexBetween ">
-        <span>2024 CasaCentral</span>All rights reserved
+        <span>2024 DreamCenter</span>All rights reserved
       </p>
     </footer>
   );

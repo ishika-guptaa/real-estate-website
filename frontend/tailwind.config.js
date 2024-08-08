@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#f5f6f2",
-        secondary: "#8ac243",
+        secondary: "#5e5ef7",
         tertiary: "#222222",
         secondaryRed: "#f42c37",
         secondaryYellow: "#fdc62e",
@@ -26,7 +26,7 @@ export default {
         "4xl": "2200px",
       },
       backgroundImage: {
-        hero: "url(/src/assets/bg.png)",
+        hero: "url(/src/assets/bg.avif)",
       },
     },
   },

@@ -42,7 +42,7 @@ const Header = () => {
           {/* logo */}
           <Link to={"/"}>
             <span className="font-[900] text-[24px]">
-              Casa<span className="font-[600] medium-20">Central</span>
+              Dream<span className="font-[600] medium-20">Center</span>
             </span>
           </Link>
           {/* navbar */}
