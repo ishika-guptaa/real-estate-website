@@ -1,14 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Box, Button, Group, NumberInput, Textarea, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { validateString } from "../utils/common";
-
-// import { useAuth0 } from "@auth0/auth0-react";
-// import UserDetailContext from "../context/userDetailContext";
-// import useProperties from "../hooks/useProperties";
-// import { useMutation } from "react-query";
-// import { toast } from "react-toastify";
-// import { createResidency } from "../utils/api";
 
 const BasicDetails = ({
   prevStep,
@@ -43,47 +36,6 @@ const BasicDetails = ({
       nextStep();
     }
   };
-
-  //   const { user } = useAuth0();
-  //   const {
-  //     userDetails: { token },
-  //   } = useContext(UserDetailContext);
-  //   const { refetch: refetchProperties } = useProperties();
-
-  //   const { mutate, isLoading } = useMutation({
-  //     mutationFn: () =>
-  //       createResidency(
-  //         {
-  //           ...propertyDetails,
-  //           facilities: { bedrooms, parkings, bathrooms },
-  //         },
-  //         token,
-  //         user?.email
-  //       ),
-  //     onError: ({ response }) =>
-  //       toast.error(response.data.message, { position: "bottom-right" }),
-  //     onSettled: () => {
-  //       toast.success("Added Successfully", { position: "bottom-right" }),
-  //         setPropertyDetails({
-  //           title: "",
-  //           description: "",
-  //           price: 0,
-  //           country: "",
-  //           city: "",
-  //           address: "",
-  //           image: null,
-  //           facilities: {
-  //             bedrooms: 0,
-  //             parkings: 0,
-  //             bathrooms: 0,
-  //           },
-  //           userEmail: user?.email, //ensure userEmail is included in PropertyDetails
-  //         });
-  //         setOpened(false)
-  //         setActiveStep(0)
-  //         refetchProperties()
-  //     },
-  //   });
 
   return (
     <Box maw={"50%"} mx="auto" my={"md"}>

@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Listing from './pages/Listing'
-// import AddProperty from './pages/AddProperty'
 import Bookings from './pages/Bookings'
 import Favourites from './pages/Favourites'
 import { Suspense, useState } from 'react'

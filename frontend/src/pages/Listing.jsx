@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SearchBar from "../components/SearchBar";
-// import { PROPERTIES } from "../constants/data";
 import Item from "../components/Item";
 import useProperties from "../hooks/useProperties.jsx";
 import { PuffLoader } from "react-spinners";
@@ -37,10 +36,7 @@ const Listing = () => {
           <SearchBar filter={filter} setFilter={setFilter} />
           {/* container */}
           <div className="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10">
-            {/* {PROPERTIES.map((property) => ( */}
-            {
-              // data.map((property) => (
-              // <Item key={property.title} property={property} />
+            {              
               data
                 .filter((property) =>
                   property.title.toLowerCase().includes(filter.toLowerCase()) ||

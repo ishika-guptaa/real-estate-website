@@ -1,26 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import aboutImg from "../assets/about.jpg";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 const About = () => {
 
-    const [isVisible, setIsVisible] = useState(false)
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const aboutSection = document.getElementById('about')
-            if (aboutSection) {
-                const top = aboutSection.getBoundingClientRect()
-                top;
-                const isVisible = top < window.innerHeight - 100
-                setIsVisible(isVisible)
-            }
-        }
-        window.addEventListener('scroll',handleScroll)
-        return()=>{
-            window.removeEventListener('scroll',handleScroll)
-        }
-    },[])
     return (
         <section id="about" className="max-padd-container py-16 xl:py-28 ">
             {/* container */}
