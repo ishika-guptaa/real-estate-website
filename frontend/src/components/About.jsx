@@ -20,8 +20,7 @@ const About = () => {
                             <RiDoubleQuotesL className="text-2xl" />{" "}
                         </span>
                         <p className="text-center relative bottom-3">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-                            placeat?
+                        Begin your journey to finding the perfect space with us.
                         </p>
                     </div>
                 </div>
@@ -31,9 +30,7 @@ const About = () => {
                     <span className="medium-18">Unveiling Our Journey</span>
                     <h2 className="h2">Our Commitment Crafting Extraordinary Real Estate Experiences</h2>
                     <p className="py-5">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                        odit necessitatibus expedita laboriosam maxime iste quis dolores
-                        cupiditate autem voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, placeat?
+                    We deliver seamless, personalized real estate services with expertise and integrity. Your goals are our priority as we guide you through every step of your journey. From tailored property recommendations to a transparent and efficient process, we strive to turn your real estate aspirations into reality.
                     </p>
                 </div>
             </div>

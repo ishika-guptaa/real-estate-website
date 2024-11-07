@@ -8,8 +8,7 @@ const Hero = () => {
                 <div className='relative top-32 xs:top-52'>
                     <span className='medium-18'>Welcome to DreamCenter</span>
                     <h1 className='h1 capitalize max-w-[40rem] text-[25px] sm:text-4xl '>Discover Exceptional Homes With DreamCenter</h1>
-                    <p className='my-10 max-w-[33rem] text-black'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse ex reiciendis earum sapiente ut, atque sed corporis at soluta aliquam?
-                    </p>
+                    <p className='my-10 max-w-[33rem] text-black'>Explore a stunning selection of properties crafted to match your dreams. From luxurious interiors to scenic exteriors, we offer homes that define comfort, style and elegance.</p>
                     {/* buttons */}
                     <div className='inline-flex items-center justify-center gap-4 p-2 bg-white rounded-xl '>
                         <div className='text-center regular-14 leading-tight pl-5 '>
