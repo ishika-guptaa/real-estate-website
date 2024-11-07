@@ -41,7 +41,7 @@ const Header = () => {
         <div className="flexBetween py-3">
           {/* logo */}
           <Link to={"/"}>
-            <span className="font-[900] text-[24px]">
+            <span className="font-[900] sm:text-[24px] text-[18px]">
               Dream<span className="font-[600] medium-20">Center</span>
             </span>
           </Link>
@@ -63,25 +63,25 @@ const Header = () => {
             />
           </div>
           {/* button */}
-          <div className="flexBetween gap-x-3 sm:gap-x-5 bold-16">
+          <div className="flexBetween gap-x-3 sm:gap-x-5 bold-16 ml-2 ">
             {!menuOpened ? (
               <MdMenu
                 onClick={toggleMenu}
-                className="xl:hidden cursor-pointer text-3xl hover:text-secondary"
+                className="xl:hidden cursor-pointer text-2xl hover:text-secondary"
               />
             ) : (
               <MdClose
                 onClick={toggleMenu}
-                className="xl:hidden cursor-pointer text-3xl hover:text-secondary"
+                className="xl:hidden cursor-pointer text-2xl hover:text-secondary"
               />
             )}
             {!isAuthenticated ? (
               <button
                 onClick={loginWithRedirect}
-                className="btn-secondary flexCenter gap-x-2 medium-16 rounded-full"
+                className="btn-secondary flexCenter rounded-full sm:w-full w-13"
               >
-                <img src={userIcon} alt="userIcon" height={22} width={22} />
-                <span>Login</span>
+                <img src={userIcon} alt="userIcon" height={10} width={10} />
+                <span className=" text-[10px]">Login</span>
               </button>
             ) : (
               <ProfileMenu user={user} logout={logout} />
