@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-padd-container bg-primary rounded-tr-3xl pt-12 xl:pt-20 pb-8">
         <h3 className="h3"> Explore real estate opportunities with us.</h3>
         <p>
-        Our team brings expertise, passion, and integrity to each step of the real estate journey.
+          Our team brings expertise, passion, and integrity to each step of the real estate journey.
         </p>
         <hr className="my-8 bg-slate-900/30 h-[2px] " />
         {/* container */}
@@ -20,7 +20,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="py-4  ">
-            Begin your journey to finding the perfect space with us.
+              Begin your journey to finding the perfect space with us.
             </p>
             <div className="flexBetween pl-6 h-[3.3rem] bg-white sm:w-full w-[90%] max-w-[366px] rounded-full ring-1 ring-slate-500/5 ">
               <input
@@ -61,7 +61,10 @@ const Footer = () => {
               <FooterColumn title={SOCIALS.title}>
                 <ul className="flex gap-4">
                   {SOCIALS.links.map((link) => (
-                    <Link to={"/"} key={link.id} className="text-xl">
+                    <Link to="#"
+                      key={link.id}
+                      className="text-xl"
+                      onClick={(e) => { e.preventDefault(); window.open(link.url, "_blank", "noopener,noreferrer") }}>
                       {link.icon}
                     </Link>
                   ))}

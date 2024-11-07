@@ -225,10 +225,10 @@ export const FOOTER_CONTACT_INFO = {
 export const SOCIALS = {
   title: "Social",
   links: [
-    { icon: <FaFacebook />, id: "facebook" },
-    { icon: <FaInstagram />, id: "instagram" },
-    { icon: <FaTwitter />, id: "twitter" },
-    { icon: <FaYoutube />, id: "youtube" },
-    { icon: <FaLinkedin />, id: "linkedin" },
+    { icon: <FaFacebook />, id: "facebook", url: "https://www.facebook.com" },
+    { icon: <FaInstagram />, id: "instagram", url: "https://www.instagram.com" },
+    { icon: <FaTwitter />, id: "twitter", url: "https://www.twitter.com" },
+    { icon: <FaYoutube />, id: "youtube", url: "https://www.youtube.com" },
+    { icon: <FaLinkedin />, id: "linkedin", url: "https://www.linkedin.com" },
   ],
 };
