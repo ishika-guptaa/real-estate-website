@@ -5,7 +5,7 @@ import Bookings from './pages/Bookings'
 import Favourites from './pages/Favourites'
 import { Suspense, useState } from 'react'
 import Layout from './components/Layout'
-import { QueryClient, QueryClientProvider } from 'react-query'
+import { QueryClient, QueryClientProvider } from 'react-query' //client side caching, error handling, refetchting the data and we can make api calls
 import { ToastContainer } from 'react-toastify'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import 'react-toastify/dist/ReactToastify.css'
@@ -34,7 +34,6 @@ export default function App() {
                 <Route index element={<Listing />} />
                 <Route path=':propertyId' element={<Property />} />
               </Route>
-              {/* <Route path='/addproperty' element={<AddProperty />} /> */}
               <Route path='/bookings' element={<Bookings />} />
               <Route path='/favourites' element={<Favourites />} />
             </Route>
